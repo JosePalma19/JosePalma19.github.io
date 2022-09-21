@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <canvas width="1300" height="860"> </canvas>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+        <body>
+            
+            <main>
+
+                <img src="imagenes/Logo.png" alt="Logo de Alura con la letra a" class="logo">
+
+                <div id="botones">
+                     <button class="iniciador" onclick="btnIniciar()">Iniciar juego</button>
+                    <button class="agregar-palabra" onclick="btnAgregar()">Agregar nueva palabra</button>
+                </div>
+
+                <section id="iniciar">
+                    <div class="botonesIniciar">
+                        <button class="nuevo-juego" onclick="btnNuevoJuego()">Nuevo juego</button>
+                        <button class="desistir" onclick="btnDesistir()">Desistir</button>
+                    </div>
+                    <input type="text" value="" id= teclado>>
+                </section>
+
+                <section id="nuevaPalabra">
+                    <input type="text" id="input-texto" placeholder="Ingrese una palabra">
+
+                    <div class="atencion">
+                        <img src="imagenes/!.png">
+                        <p>Máx. de 8 letras, sin espacios o caracteres especiales.</p>
+                    </div>
+                    
+                    <div class="botonesNuevaP">
+                        <button class="guardar" onclick="btnGuardar()">Guardar y empezar</button>
+                        <button class="cancelar" onclick="btnCancelar()">Cancelar</button>
+                    </div>    
+                </section>
+
+            </main>
+            
+            <script src="script.js"></script>
+            <script src="canvas.js"></script>
+
+            <footer>
+                <p>José Alejandro Palma - Programa ONE - Alura Latam</p>
+            </footer>
+        </body>
+
+    </html>
+

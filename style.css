@@ -1,0 +1,346 @@
+canvas{
+    display: none;
+    position: absolute;
+    top: 13%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background:  #F3F5FC;
+}
+
+.logo{
+    padding: 40px;
+}
+
+#botones{
+    display: block;
+}
+
+.iniciador{
+    display: block;
+    flex-direction: row;
+    align-items: flex-start;
+
+    position: absolute;
+    top: 45%;
+    left: 42.5%;
+    width: 15%;
+    height: 10%;
+    border-radius: 24px;
+    background: #0A3871;
+    color: white;
+    font-size: 20px;
+}
+
+.agregar-palabra{
+    display: block;
+    flex-direction: row;
+    align-items: flex-start;
+    position: absolute;
+    top: 58%;
+    left: 44%;
+    width: 12%;
+    height: 7%;
+    color: #0A3871;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    font-size: 15px;
+}
+
+#iniciar{
+    display: none;
+}
+
+.botonesIniciar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 3.5%;
+
+    position: absolute;
+    width: 47.7%;
+    height: 7%;
+    left: 21.15%;
+    top: 83%;
+}
+
+.nuevo-juego{
+    width: 48.25%;
+    height: 100%;
+    border-radius: 24px;
+    background: #0A3871;
+    color: white;
+    font-size: 16px;
+}
+
+.desistir{
+    width: 48.25%;
+    height: 100%;
+    border-radius: 24px;
+    font-size: 16px;
+}
+
+#nuevaPalabra{
+    display: none;
+}
+
+#input-texto{
+    position: absolute;
+    width: 47%;
+    height: 50%;
+    left: 21.15%;
+    top: 5%;
+    border: none;
+    background-color: #F3F5FC;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+}
+
+::placeholder{
+        color: #0A3871;
+    }
+    
+#input-texto:focus{
+        border: none;
+        outline: none;
+}
+
+.atencion{
+    display: flex;
+    position: absolute;
+    left: 21.15%;
+    top: 67%;
+    gap: 10px;
+    color: grey;
+}
+
+.botonesNuevaP{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 3.5%;
+
+    position: absolute;
+    width: 47.7%;
+    height: 7%;
+    left: 21.15%;
+    top: 70%;
+}
+
+.guardar{
+    width: 48.25%;
+    height: 100%;
+    border-radius: 24px;
+    background: #0A3871;
+    color: white;
+    font-size: 16px;
+}
+
+.cancelar{
+    width: 48.25%;
+    height: 100%;
+    border-radius: 24px;
+    font-size: 16px;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+
+
+footer p{
+    position: absolute;
+    top: 97%;
+    left: 20%;
+    width: 60%;
+    font-style: oblique;
+    font-size: 20px;
+    font-family: inherit;
+    text-align: center;
+}
+
+.palabra-secreta{
+    position: absolute;
+}
+
+#teclado{
+    display: none;
+    visibility: hidden;
+    background: #F3F5FC;
+    position: absolute;
+    height: 2%;
+    width: 60%;
+    top: 70%;
+    left: 20%;
+}
+#teclado:focus{
+    outline: red;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1590px){ 
+    .logo{
+        height: 80px;
+    }
+    body{
+        width: 100%;
+        height: 100%;
+        background:  #F3F5FC;
+    }
+    .canvas{
+        top: 13%;
+        height: 100%;
+        width: 100%;
+    }
+    .iniciador{
+        left: 20%;
+        width: 60%;
+        height: 10%;
+        top: 60%;
+        font-size: 28px;
+    }
+    .agregar-palabra{
+        left: 25%;
+        top: 72%;
+        width: 50%;
+        height: 8%;
+        font-size: 24px;
+    }
+    .botonesIniciar{
+        top: 80%;
+        left: 10%;
+        width: 80%;
+        height: 7%;
+    }
+    .nuevo-juego{
+        font-size: 25px;
+    }
+    .desistir{
+        font-size: 25px;
+    }
+
+    .botonesNuevaP{
+        left: 10%;
+        width: 80%;
+    }
+
+    #input-texto{
+        font-size: 40px;
+    }
+
+    .guardar{
+        font-size: 24px;
+    }
+
+    .cancelar{
+        font-size: 24px;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1023px){ 
+    .logo{
+        height: 80px;
+    }
+    .canvas{
+        top: 13%;
+        height: 100%;
+        width: 100%;
+    }
+    .iniciador{
+        left: 25%;
+        width: 50%;
+        font-size: 30px;
+    }
+    .agregar-palabra{
+        left: 30%;
+        width: 40%;
+        font-size: 24px;
+    }
+
+    .botonesIniciar{
+        width: 80%;
+        left: 10%;
+    }
+
+    .nuevo-juego{
+        font-size: 24px;
+    }
+
+    .desistir{
+        font-size: 24px;
+    }
+
+    #input-texto{
+        font-size: 40px;
+    }
+
+    .atencion{
+        left: 15%;
+        font-size: 20px;
+    }
+
+    .botonesNuevaP{
+        width: 80%;
+        left: 10%;
+    }
+    
+    .guardar{
+        font-size: 24px;
+    }
+
+    .cancelar{
+        font-size: 24px;
+    }
+}
+
+@media only screen and (min-device-width : 300px) and (max-device-width : 480px){ 
+    .logo{
+        width: 100px;
+    }
+    .iniciador{
+        width: 60%;
+        left: 20%;
+    }
+
+    .agregar-palabra{
+        width: 50%;
+        left: 25%;
+    }
+
+    .botonesIniciar{
+        width: 80%;
+        left: 10%;
+    }
+
+    #input-texto{
+        top: 15%;
+        font-size: 20px;
+        width: 80%;
+        left: 10%;
+    }
+
+    .atencion{
+        width: 100%;
+        left: 5%;
+        right: 5%;
+        font-size: 12px;
+    }
+
+    .botonesNuevaP{
+        width: 80%;
+        left: 10%;
+    }
+
+    footer p {
+        font-size: 11px;
+        width: 80%;
+        left: 10%;
+    }
+}
